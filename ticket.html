@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
 	<meta charset="utf-8">
-	<title>Collections</title>
+	<title>Tickets</title>
 	<link rel="stylesheet" href="./dist/main.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
@@ -20,7 +20,7 @@
 			</a>
 		</div>
 		<div class="header-container__title">
-			<h1>Collections</h1>
+			<h1>Plan Your Visit</h1>
 		</div>
 		<div class="header-container__nav">
 			<a href="#" class="menu-toggle" data-js="menu-toggle">
@@ -117,76 +117,76 @@
 					</a>
 				</div>
 			</div>
-        </nav>
-        
-      </div>
+        </nav>        
     </div>
-
-<div class="search-container">
-	<form class="search-form" action="" method="get" role="search">
-		<div class="search-form-group">
-			<input type="text" class="search-form__field" id="input-field" placeholder=" " autocomplete="off" />
-			<label for="input-field">Explore the Collection</label>
-		</div>
-		<div class="search-form-btn">
-			<button type="submit">
-				<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M7.34315 14.6769C10.4673 17.8011 15.5327 17.8011 18.6569 14.6769C21.781 11.5527 21.781 6.48736 18.6569 3.36316C15.5327 0.238962 10.4673 0.238962 7.34315 3.36316C4.21895 6.48736 4.21895 11.5527 7.34315 14.6769ZM7.34315 14.6769L1.68629 20.3337" stroke="#FF473A" stroke-width="2" stroke-linecap="square"/>
-				</svg>
-			</button>
-		</div>
-	</form>
-	<a href="#" class="link-btn">Advanced Search</a>
 </div>
 
-<div class="container cards-container">
+<div class="container ticket-container">
 	<div class="row">
-		<div class="col-6 col-md-4 card-col">
-			<div class="card">
-				<div class="card__img">
-					<img src="./assets/img/decorative.png" alt="" title="" />
-				</div>
-				<h2><a href="#">Decorative<br/> Arts & Crafts</a></h2>
-			</div>
+		<div class="col-12">
+			<h2 class="ticket-headline">
+				Skip the Line.<br/>
+				Purchase Tickets.
+			</h2>
+			<p class="ticket-description">
+				All exhibitions, audio tours, and films included in the price of admission.
+			</p>
 		</div>
-		<div class="col-6 col-md-4 card-col">
-			<div class="card">
-				<div class="card__img">
-					<img src="./assets/img/american-impressionism.png" alt="" title="" />
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="wrapper">
+				<div class="button-wrapper">
+					<button class="button-wrapper__tab" data-id="today">Today</button>
+					<button class="button-wrapper__tab active" data-id="tomorrow">Tomorrow</button>
+					<button class="button-wrapper__tab" data-id="other">Other</button>
 				</div>
-				<h2><a href="#">American<br/> Impressionism</a></h2>
-			</div>
-		</div>
-		<div class="col-6 col-md-4 card-col">
-			<div class="card">   
-				<div class="card__img">
-					<img src="./assets/img/de-stijl.png" alt="" title="" />
+				<div class="content-wrapper">
+					<div class="content" id="today">today</div>
+					<div class="content active" id="tomorrow">
+						<div class="content-date">
+							March 22, 2016<br/>
+							Open 10:30am-5:30pm
+						</div>
+						
+						<div class="row">
+							<div class="col-md-8">
+								<div class="content-ticket-fields">
+									<div class="ticket-type">
+										Adults
+									</div>
+									<input type="number" min="0" step="1" value="0">
+								</div>
+								<div class="content-ticket-fields">
+									<div class="ticket-type">
+										Seniors
+										<span>65+ with ID</span>
+									</div>
+									<input type="number" min="0" step="1" value="0">
+								</div>
+								<div class="content-ticket-fields">
+									<div class="ticket-type">
+										Students
+										<span>with ID</span>
+									</div>
+									<input type="number" min="0" step="1" value="0">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="total-content">
+									<span>Total</span>
+									<span class="sum">$16</span>
+								</div>
+								
+								<button class="primary-button">
+									Continue to Payment
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="content" id="other">other</div>
 				</div>
-				<h2><a href="#">De Stijl</a></h2>
-			</div>
-		</div>
-		<div class="col-6 col-md-4 card-col">
-			<div class="card">
-				<div class="card__img">
-					<img src="./assets/img/cubism.png" alt="" title="" />
-				</div>
-				<h2><a href="#">Cubism</a></h2>
-			</div>
-		</div>
-		<div class="col-6 col-md-4 card-col">
-			<div class="card">
-				<div class="card__img">
-					<img src="./assets/img/american-photography.png" alt="" title="" />
-				</div>
-				<h2><a href="#">American Photography</a></h2>
-			</div>
-		</div>
-		<div class="col-6 col-md-4 card-col">
-			<div class="card">
-				<div class="card__img">
-					<img src="./assets/img/greek-antiquities.png" alt="" title="" />
-				</div>
-				<h2><a href="#">Greek Antiquities</a></h2>
 			</div>
 		</div>
 	</div>

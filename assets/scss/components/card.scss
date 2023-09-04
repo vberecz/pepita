@@ -1,7 +1,13 @@
 .cards-container {
+	margin-top: 12px;
+	
 	.card-col {
+		margin-bottom: 12px;
+	
 		.card {
 			&__img {
+				margin-bottom: 6px;
+				
 				img {
 					display: block;
 					width: 100%;
