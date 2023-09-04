@@ -1,0 +1,6 @@
+.link-btn {
+	@include font-size(smaller, px);
+	text-decoration: none;
+	color: $color-orange;
+	line-height: 123%;
+}

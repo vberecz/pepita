@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: 'scss/',
+                    cwd: 'assets/scss/',
                     src: ['main.scss'],
                     dest: 'dist/',
                     ext: '.css'
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['./scss/**/*.scss'],
+                files: ['./assets/scss/**/*.scss'],
                 tasks: ['sass', 'concat'],
                 options: {
                     spawn: false
