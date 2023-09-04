@@ -1,0 +1,133 @@
+.ticket {
+	&-container {
+		margin-top: 12px;
+	}
+	
+	&-headline {}
+	
+	&-description{
+		max-width: 275px;
+		margin-top: 6px;
+	}
+}
+.wrapper {
+	.button-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		border-bottom: 2px solid $color-light-gray;
+	
+		&__tab {
+			transition: 0.5s;
+			cursor: pointer;
+			color: $color-gray;
+			border: none;
+			position:relative;
+			height: 36px;
+			background-color: transparent;
+			
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				width:100%;
+				height: 0;
+			}
+		
+			&.active {
+				color: $color-lighter-black;
+				
+				&:after {
+					height: 3px;
+					background-color: $color-orange;
+				}
+			}
+		}
+	}
+	
+	.content-wrapper {
+		
+		.content {
+			display: none;
+			
+			&-date {
+				margin-top: 10px;
+			}
+			
+			&.active {
+				display: block;
+			}
+			
+			&-ticket-fields {
+				display: flex;
+				justify-content: space-between;
+				align-items: start;
+				margin-bottom:38px;
+				padding: 0 12px;
+				
+				&:first-child {
+					margin-top: 62px;
+				}
+				
+				&:last-child {
+					margin-bottom: 0;
+				}
+				
+				.ticket-type {
+					
+					span {
+						display: block;
+					}
+				}
+				
+				.quantity-buttons {
+					display: flex;
+					align-items: center;
+					
+					button {
+						background-color: transparent;
+						width: 18px;
+						height: 18px;
+						border: 1px solid $color-gray;
+						position: relative;
+						
+						svg {
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translate(-50%, -50%);
+						}
+					}
+					
+					input {
+						width:17px;
+						height: 17px;
+						margin: 0 10px;
+						border: none;
+						text-align: center;
+						
+						@media (min-width: 992px) {
+							width: 80px;
+						}
+					}
+				}
+			}
+			
+			.total-content {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 64px;
+				border-top: 2px solid $color-orange;
+				padding-top: 6px;
+				padding-left: 14px;
+				padding-right: 32px;
+				padding-bottom: 38px;
+				
+				span {
+					
+				}
+			}
+		}
+	}
+}
