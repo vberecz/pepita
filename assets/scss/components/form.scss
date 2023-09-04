@@ -38,17 +38,6 @@
 		top: 50%;
 		transform: translate(0, -50%);
 		padding-right: 5px;
-		
-		button {
-			background: transparent;
-			border: 0;
-			outline: none;
-			height: 48px;
-			
-			&:hover {
-				cursor: pointer;
-			}
-		}
 	}
 }
 

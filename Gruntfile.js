@@ -1,3 +1,5 @@
+const sass = require('sass');
+
 module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
@@ -13,6 +15,7 @@ module.exports = function(grunt) {
         sass: {
             options: {
                 sourceMap: true,
+                implementation: sass,
                 outputStyle: 'compressed'
             },
             dist: {
