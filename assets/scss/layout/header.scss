@@ -1,0 +1,16 @@
+header {
+	position:relative;
+	
+	.header-container {
+		width: 100%;
+		background: $color-white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: .53em .67em;
+		
+		&__title {
+			color: $color-orange;
+		}
+	}
+}

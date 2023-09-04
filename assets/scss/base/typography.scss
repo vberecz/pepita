@@ -1,0 +1,25 @@
+@include font-face('montserrat-regular', '../assets/fonts/Montserrat-Regular');
+
+body, html {
+	font-family: montserrat-regular, sans-serif;
+	font-size: font-size(default, px);
+}
+
+h1 {
+	@include font-size(default, px);
+	line-height: 122%;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	@include font-size(smaller, px);
+	line-height: 122%;
+	margin: 0;
+	padding: 0;
+	
+	a {
+		text-decoration:none;
+		color: $color-orange;
+	}
+}
