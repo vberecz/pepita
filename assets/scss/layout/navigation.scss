@@ -1,0 +1,55 @@
+.hidden-panel {
+	position: absolute;
+	height: 100vh;
+	width: 310px;
+	background: $color-orange;
+	top: 0;
+	left: -310px;
+	
+	&-close {
+		cursor: pointer;
+		position: absolute;
+		right: -32px;
+		top: 24px;
+		opacity: 0;
+		
+		&:hover {
+		
+		}
+	}
+	
+	&-menu {
+		padding-left: 18px;
+		
+		&__nav {
+			margin-bottom: 32px;
+		
+			a {
+				display: flex;
+				align-items: center;
+				
+				.icon {
+					width: 30px;
+					height: auto;
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}
+
+body {
+	&.panel-open {
+		.header-container {
+			&__logo {
+				opacity: 0;
+			}
+		}
+		
+		.hidden-panel {
+			&-close {
+				opacity: 1;
+			}
+		}
+	}
+}

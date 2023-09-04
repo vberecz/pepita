@@ -22,6 +22,14 @@ html {
 
 body {
   margin: 0;
+  overflow: hidden;
+  position: relative;
+  transition: left 0.3s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.panel-open {
+  right: -310px;
 }
 
 /**
@@ -38,8 +46,8 @@ main {
  */
 
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
+  font-weight: normal;
 }
 
 /* Grouping content

@@ -23,3 +23,16 @@ h2 {
 		color: $color-orange;
 	}
 }
+
+.hidden-panel {	
+	&-menu {
+		&__nav {
+			a {
+				@include font-size(default, px);
+				color: $color-white;
+				font-weight: normal;
+				text-decoration: none;
+			}
+		}
+	}
+}
